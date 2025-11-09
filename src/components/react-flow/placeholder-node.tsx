@@ -7,7 +7,7 @@ import { BaseNode } from "@/components/react-flow/base-node";
 
 export type PlaceholderNodeProps = Partial<NodeProps> & {
   children?: ReactNode;
-  onClick?: () => {};
+  onClick?: () => void;
 };
 
 export const PlaceholderNode = forwardRef<HTMLDivElement, PlaceholderNodeProps>(
